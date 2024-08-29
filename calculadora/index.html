@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/calculadora/estilos/style.css">
+</head>
+<body class="body">
+
+    <div class="calculator">
+        <input id="entrada" class="Input" type="display" readonly>
+        <br>
+        <br>
+        <div class="calculator-screen">
+            <input type="button" value="AC" class="bf1 bf1-margin-top bf1-operation-color" onclick="limpiar()"">
+            <input type="button" value="DEL" class="bf1 bf1-operation-color" onclick="borrar()">
+            <input type="button" value="%" class="bf1 bf1-operation-color" onclick="porcentaje()">
+            <input type="button" value="/" class="bf1 bf1-operation-color" onclick="mostrarValor('/')">
+            <br>
+            <br>
+            <input type="button" value="7" class="bf1" onclick="mostrarValor(7)">
+            <input type="button" value="8" class="bf1" onclick="mostrarValor(8)">
+            <input type="button" value="9" class="bf1" onclick="mostrarValor(9)">
+            <input type="button" value="*" class="bf1 bf1-operation-color" onclick="mostrarValor('*')">
+            <br>
+            <br>
+            <input type="button" value="4" class="bf1" onclick="mostrarValor(4)">
+            <input type="button" value="5" class="bf1" onclick="mostrarValor(5)">
+            <input type="button" value="6" class="bf1" onclick="mostrarValor(6)">
+            <input type="button" value="-" class="bf1 bf1-operation-color" onclick="mostrarValor('-')">
+            <br>
+            <br>
+            <input type="button" value="1" class="bf1" onclick="mostrarValor(1)">
+            <input type="button" value="2" class="bf1" onclick="mostrarValor(2)">
+            <input type="button" value="3" class="bf1" onclick="mostrarValor(3)">
+            <input type="button" value="+" class="bf1 bf1-operation-color" onclick="mostrarValor('+')">
+            <br>
+            <br>
+            <input type="button" value="0" class="bf0 bf1-margin-bottom" onclick="mostrarValor(0)">
+            <input type="button" value="." class="bf1" onclick="mostrarValor('.')">
+            <input type="button" value="=" class="bf1 bf1-equal-button-color" onclick="calcular()">
+        </div>
+
+    </div>
+
+    <script src="/calculadora/funcionalidad/funcionalidad.js"></script>
+</body>
+</html>
